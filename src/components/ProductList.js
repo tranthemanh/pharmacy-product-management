@@ -32,7 +32,7 @@ const ProductList = () => {
                         <td>{product.title}</td>
                         <td>{product.category}</td>
                         <td>{product.quantity}</td>
-                        <td>{product.price}</td>
+                        <td>{product.price.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'})}</td>
                         <td>{product.date}</td>
                     </tr>
                 ))}
